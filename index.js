@@ -31,6 +31,6 @@ function actionApplyer(startingNumber, functions) {
   if (functions === undefined || functions.length === 0) {
     return startingNumber
   } else {
-    return functions.reduce((total, func) => func(total), startingNumber) // coooooool
+    return functions.reduce((resultingNumber, func) => func(resultingNumber), startingNumber) // coooooool
   }
 }
